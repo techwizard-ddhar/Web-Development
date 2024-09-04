@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <div class="myList">
+            <h1 class="title">Items</h1>
+            <ul class="items">
+                <li class="item">Item1</li>
+                <li class="item">Item2</li>
+                <li class="item">Item3</li>
+            </ul>
+        </div>
+
+        <script>
+            const element = document.querySelector(".items");
+            console.log(element);
+            element.parentNode.style.color = "red";
+            console.log(element.children[1]);
+            console.log(element.previousElementSibling)
+        </script>
+    </body>
+</html>

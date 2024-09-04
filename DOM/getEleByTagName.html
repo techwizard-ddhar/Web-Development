@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <div>Div One</div>
+        <p>paragraph one</p>
+        <div>Div two</div>
+        <p>paragraph two</p>
+        <div>yet another div</div>
+
+        <p id="demo"></p>
+
+        <script>
+            var divs = document.getElementsByTagName("div");
+            document.getElementById("demo").innerHTML = divs[2].innerHTML
+            console.log(divs);
+            
+        </script>
+    </body>
+</html>

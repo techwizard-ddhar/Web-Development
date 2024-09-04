@@ -1,0 +1,56 @@
+<html>
+    <style>
+        div{
+            border: 3px solid red;
+            margin: 5px;
+            padding-left: 5px;
+        }
+    </style>
+    <body>
+
+        <div id="myId">
+            <h1 class="display">Interactive</h1>
+            <h2 class="intro">Non-Interactive</h2>
+            <h3 class="display">Inspire and empower</h3>
+        </div>
+
+        <div>
+            <h1 class="display">Interactive</h1>
+            <p>I am a p element, my parent is a div element</p>
+            <h3 class="display">Inspire and empower</h3>
+        </div>
+
+        <div>
+            <h1 class="display">Interactive</h1>
+            <p>I am a p element, my parent is a div elemnt</p>
+            <h2 class="display">Inspire and empower</h3>
+        </div>
+
+        <p id="demo"></p>
+
+        <script>
+            var x = document.querySelectorAll('.intro'); // dot represent class
+            x.forEach(paragraph => paragraph.style.background = "green");
+
+            var element = document.getElementById('myId');
+            var list = element.querySelectorAll('.display');
+            //document.getElementById("demo").innerHTML = 'length is:' + list.length;
+
+            //querySelectorAll --> all occurance --> Therefore we use forEach loop.
+            var ele = document.querySelectorAll('div > p');
+            ele.forEach(paragraph => paragraph.style.background = "grey");
+
+            //querySelect --> first occurance
+            var ele1 = document.querySelector('div > h1');
+            ele1.style.background = "pink";
+
+            let count = 0;
+            var cnt = document.querySelectorAll('.display');
+            cnt.forEach(paragraph =>{
+                count++;
+            });
+            document.getElementById("demo").innerHTML = 'Total count is: ' + count + ' and length of id=myId is ' + list.length ;
+
+        </script>
+    </body>
+</html>

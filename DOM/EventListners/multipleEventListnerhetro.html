@@ -1,0 +1,24 @@
+<html>
+    <body>
+
+        <button id="myId">Click !!</button>
+
+        <p id="info"></p>
+
+        <script>
+            var ele = document.getElementById("myId");
+            ele.addEventListener("mouseover", function(){
+                document.getElementById("info").innerHTML += "Moused over !!<br>"
+            });
+
+            ele.addEventListener("click", function(){
+                document.getElementById("info").innerHTML += "clicked !!<br>"
+            });
+
+            ele.addEventListener("mouseout", function(){
+                document.getElementById("info").innerHTML += "Moused out !!<br>"
+            });
+
+        </script>
+    </body>
+</html>

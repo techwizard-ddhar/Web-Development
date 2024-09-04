@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Api Fetch</title>
+    </head>
+
+    <body>
+    
+        <script>
+            async function UserData(){
+                //alert("Hii there !!")
+                //const info = fetch("https://fakerapi.it/api/v1/persons");
+                //console.log(info) --> 'fetch'is an async function, it's a promise
+
+
+                //fetch("https://fakerapi.it/api/v1/persons")//GET request --> sending request to the server
+                //  .then(function(response){
+                //        response.json() //->response.json() = async function -> promise
+                //            .then(function(finalData){
+                //                console.log(finalData)
+                //            });
+                //    });
+
+
+                //easier way
+                const response = await fetch("https://fakerapi.it/api/v1/persons");
+                const finalData = await response.json(); // async function --> it' a promise
+                document.getElementById("UserData").innerHTML = JSON.stringify(finalData);
+                //console.log(finalData);
+                
+                    
+            }
+        </script>
+        <div id="UserData"></div>
+        <button onclick="UserData()">User Information</button>
+        
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <body>
+
+        <p>This example uses two addEventListener() to the same button</p>
+
+        <button id="myId">Click</button>
+
+        <script>
+            var ele = document.getElementById("myId");
+            ele.addEventListener("click", function(){
+                alert("Hello world !!");
+            });
+
+            ele.addEventListener("click", function(){
+                alert("This function was also executed !");
+            });
+            
+        </script>
+    </body>
+</html>

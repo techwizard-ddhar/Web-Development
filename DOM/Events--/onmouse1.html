@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <div id ="myId" onmousedown="mDown()" onmouseup="mUp()"
+        style="background-color: rebeccapurple; width: 100px; height: 30px; padding: 40px;">Click Me</div>
+
+        <script>
+            function mDown(){
+                const element = document.getElementById("myId");
+                element.style.backgroundColor = "yellow";
+                element.innerHTML = "Release me"
+            }
+
+            function mUp(){
+                const element = document.getElementById("myId");
+                element.style.backgroundColor = "rebeccapurple";
+                element.innerHTML = "Thank you";
+            }
+        </script>
+
+    </body>
+</html>

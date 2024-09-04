@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h1>Remove child element</h1>
+        <div id="myId">
+            <p id="myId1">This is 1st paragraph</p>
+            <p id="myId1">This is second paragraph</p>
+        </div>
+
+        <button onclick="myFunction()">Delete</button>
+
+        <script>
+            function myFunction(){
+                const parent = document.getElementById("myId");
+                const child = document.getElementById("myId1");
+                parent.removeChild(child);
+            }
+        </script>
+    </body>
+</html>

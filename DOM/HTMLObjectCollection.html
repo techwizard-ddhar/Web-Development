@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>DOM</title>
+    </head>
+    <body>
+        <form id="LoginForm">
+            First Name: <input type="text" id="fname" name="fname" value="Doanld"><br>
+            Last Name: <input type="text" id="lname" name="name" value="Trumph"><br>
+            <input type="submit" value="submit" style="cursor: pointer;">
+        </form>
+
+        <button onclick="perform()" style="cursor: pointer;">Try it</button>
+
+        <p id = "displayspace"></p>
+
+        <script>
+            function perform(){
+                // var x = document.getElementById("LoginForm");
+                var x = document.forms["LoginForm"];
+                let text = " ";
+                for(let i = 0; i < x.length; i++){
+                    text += x.elements[i].value + "<br>";
+                }
+                document.getElementById("displayspace").innerHTML = text;
+            }
+        </script>
+    </body>
+</html>

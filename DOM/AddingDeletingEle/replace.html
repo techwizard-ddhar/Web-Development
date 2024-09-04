@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <ul id="myList">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        <p>Click "Replace" to replace the second item on the list</p>
+
+        <button onclick="myFunction()">Replace</button>
+
+        <p>This example repace the text node "Tea" with a text node "Juice"</p>
+
+        <p id="myId"></p>
+
+        <script>
+            function myFunction(){
+                const element = document.getElementById("myList");
+                let child = element.children;
+                const newNode = document.createElement("li");
+                newNode.textContent = "Juice";
+                element.replaceChild(newNode, child[1]);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <style>
+            div{
+                background-color: chocolate;
+                color: white;
+                border: 2px solid;
+                padding: 50px;
+                font-size: 20px;
+            }
+        </style>
+
+        <div id="myId">This div element has a onmousemove event handler, everytime you move your mousemove
+            inside it, it will display a random number.
+            <p>Click the button to remove div event handler</p>
+
+            <button onclick="Remove()">Remove</button>
+
+        </div>
+
+        <p id="demo"></p>
+
+        <script>
+            document.getElementById("myId").addEventListener("mousemove", myFunction);
+
+            function myFunction(){
+                document.getElementById("demo").innerHTML = Math.random();
+            }
+
+            function Remove(){
+                document.getElementById("myId").removeEventListener("mousemove", myFunction);
+            }
+
+
+        </script>
+
+    </body>
+</html>

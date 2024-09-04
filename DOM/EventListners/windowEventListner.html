@@ -1,0 +1,14 @@
+<html>
+    <body>
+
+        <h2>Try resizing the window, to triger "resize" event handler</h2>
+
+        <p id="myId"></p>
+
+        <script>
+            window.addEventListener("resize", function(){
+                document.getElementById("myId").innerHTML = Math.random();
+            })
+        </script>
+    </body>
+</html>

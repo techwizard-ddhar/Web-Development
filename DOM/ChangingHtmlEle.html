@@ -1,0 +1,75 @@
+
+<html>
+    <body>
+
+        <h1>Changing Html Elements</h1>
+
+        <p id="myId">what is your name ____</p>
+
+        <script>
+            document.getElementById("myId").innerHTML = "My name is Debanjan Dhar";
+        </script>
+    </body>
+</html>
+
+
+<!-- <html>
+    <body>
+        <img id="image" src="smiley.gif"></img>
+
+        <script>
+            document.getElementById("image").src = "website.jpg";
+        </script>
+
+        <p>The original image was .gif, but script change it to .jpg using element.attribute property</p>
+    </body>
+</html> -->
+
+
+<!-- <html>
+    <body>
+        <h1 id="myId" style="background-color: aqua;">Welcome to DOM{Document Object Model}</h1>
+
+        <script>
+            document.getElementById("myId").style.backgroundColor = "violet";
+        </script>
+
+        <p>The original color was aqua, but script change it to pink</p>
+
+    </body>
+</html> -->
+
+
+<!-- <html>
+    <body>
+        
+        <input   id="myId" value="ok">
+
+        <p>by clicking Change, input field will change into button</p>
+
+
+        <button onclick="myFunction()">Change</button>
+
+        <script>
+            function myFunction(){
+                document.getElementById("myId").setAttribute("type", "button");
+            }
+        </script>
+
+
+    </body>
+</html> -->
+
+<html>
+    <body>
+        <p id="myId"></p>
+
+        <script>
+            document.getElementById("myId").innerHTML = "Date:" + Date();
+            document.write("try using write() method!!!")
+        </script>
+
+
+    </body>
+</html>
+

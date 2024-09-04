@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <p>create a p element and append it to div</p>
+        <div id="myId" style="background-color: pink; padding: 16px;">
+            Div Element
+        </div>
+
+        <script>
+            const para = document.createElement("p");
+            para.innerHTML = "This is a new paragraph";
+            document.getElementById("myId").appendChild(para);
+        </script>
+    </body>
+</html>
+
+
